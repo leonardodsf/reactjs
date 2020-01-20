@@ -1,0 +1,78 @@
+SPA -> SINGLE PAGE APLICATION
+
+yarn é tipo um npm um pouco mais veloz criado pelo Facebook
+
+instalando um pacote global
+npm install -g create-react-app
+ou 
+npm install --global create-react-app
+
+ele vem com a parte de transpilação configurado
+
+criando um projeto
+
+create-react-app "nome"
+Ex: create-react-app huntweb
+
+yarn start
+    Starts the development server.
+
+  yarn build
+    Bundles the app into static files for production.
+
+  yarn test
+    Starts the test runner.
+
+  yarn eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd huntweb
+  yarn start
+
+========================================
+npm start -> inicia os scripts no navegador abrindo uma porta automatica
+
+import react serve para poder utilizar as tags html  que são JSX
+
+react dom serve para jogar o app la no html por meio de um id chamado root
+
+component é um conjunto de parte visual (html - parte estrutural), parte funcional que é o javascript, e a parte de 
+estilização que é o css, basicamente o component é a junção de html, css e javascript
+
+
+API DO NODE -> https://rocketseat-node.herokuapp.com/api
+
+para buscar a api, utiliza o axios
+yarn add axios
+
+
+para armazenar dados no react, utiliza a variavel state
+
+state = {
+
+}
+
+por que não armazenar em uma variavel qualquer ao inves de estado?
+
+nosso método render ele  pode basicamente, depender dessas variveis, vamos dizer que temos uma
+varivel dentro do products e queremos mostrar ela no render
+
+contagem de produtos: {this.state.products.length}
+
+instalando a biblioteca de navegação
+
+yarn add react-router-dom
+
+BrowserRouter ele vai definir que está sendo utilizado as rotas através de um browser
+
+Switch dentro do BrowserRouter, vai permitir que uma única rota seja chamada ao mesmo tempo
+
+no react-router-dom pode fazer por exemplo, que dois componentes separados sejam mostrados, sejam exibidos quando uma
+rota for acessada 
+
+<Route exact path="/" component={Main}/>
+
+exact -> só vai chamar essa primeira rota quando nosso path for exatamente uma /
